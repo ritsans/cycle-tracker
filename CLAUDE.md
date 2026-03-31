@@ -23,6 +23,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 | `pnpm format`       | oxfmt でフォーマット                 |
 | `pnpm format:check` | フォーマットチェックのみ（変更なし） |
 
+* Write\Edit フックにフォーマットを掛けています。ファイルが保存されるたびにformatが発火。手動指示不要。
+
 ## React Compiler
 
 React Compiler が有効化済み（`next.config.ts`）。`memo`・`useMemo`・`useCallback` による手動最適化は不要。コンパイラが自動的に行う。
