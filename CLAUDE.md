@@ -23,7 +23,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 | `pnpm format`       | oxfmt でフォーマット                 |
 | `pnpm format:check` | フォーマットチェックのみ（変更なし） |
 
-* Write\Edit フックにフォーマットを掛けています。ファイルが保存されるたびにformatが発火。手動指示不要。
+- Write\Edit フックにフォーマットを掛けています。ファイルが保存されるたびにformatが発火。手動指示不要。
+
+## ドキュメント
+
+| パス                           | 内容       |
+| ------------------------------ | ---------- |
+| `docs/plans/design.md`         | 設計書     |
+| `docs/plans/implementation.md` | 実装プラン |
+| `docs/memo.md`                 | メモ       |
 
 ## React Compiler
 
@@ -39,3 +47,14 @@ React Compiler が有効化済み（`next.config.ts`）。`memo`・`useMemo`・`
 
 - **ブランチ命名:** `feature/xxx`, `fix/xxx`, `chore/xxx`
 - **コミットメッセージ:** Conventional Commits（`feat:`, `fix:`, `chore:`, `refactor:`, `docs:` など）
+
+## Git Worktree
+
+worktreeはリポジトリ内ではなく、親ディレクトリに兄弟として作成すること。
+命名規則: `{repo}-{branch-name}`
+
+例:
+myapp-myprojects/ ← 整理用親ディレクトリ
+├── myapp-main ← main メインリポジトリ
+├── myapp-feature-auth ← feature/auth リポジトリ / worktree
+└── myapp-feature-ui ← feature/ui リポジトリ / worktree

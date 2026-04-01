@@ -1,4 +1,31 @@
 {
+  "permissions": {
+      "allow": [
+          "Bash(git:*)",
+          "Bash(grep:*)",
+          "Bash(mkdir:*)",
+          "Bash(cp:*)",
+          "Bash(echo:*)",
+          "Read",
+          "Write",
+          "Edit",
+          "Glob",
+          "Grep"
+      ],
+      "deny": [
+        "Bash(sudo:*)",
+        "Bash(rm:*)",
+        "Bash(rm -rf:*)",
+        "Read(.env.*)",
+        "Read(id_rsa)",
+        "Read(id_ed25519)",
+        "Write(.env*)",
+        "Bash(git push:*)",
+        "Bash(curl:*)",
+        "Bash(wget:*)",
+        "Bash(nc:*)"
+      ]
+  },
   "hooks": {
     "PostToolUse": [
       {
