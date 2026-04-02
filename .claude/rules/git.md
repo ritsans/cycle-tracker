@@ -1,5 +1,6 @@
 ---
-paths: .git/**
+paths:
+  - .git/**
 ---
 
 ## Git 規約

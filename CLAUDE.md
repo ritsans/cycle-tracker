@@ -58,6 +58,20 @@ myapp-myprojects/ ← 整理用親ディレクトリ
 - 途中でうまくいかなくなったら、無理に進めず立ち止まって再計画する
 - コードを読まずに書かない
 
+## Superpowers
+
+計画・実装・見直しには必ず Superpowers スキルを使うこと。
+
+| フェーズ | スキル                                                                              |
+| -------- | ----------------------------------------------------------------------------------- |
+| 計画     | `superpowers:writing-plans`                                                         |
+| 実装     | `superpowers:executing-plans` または `superpowers:subagent-driven-development`      |
+| 見直し   | `superpowers:requesting-code-review` / `superpowers:verification-before-completion` |
+
+## Supabase
+
+Supabase への操作（テーブル作成・マイグレーション・クエリ実行・プロジェクト情報取得など）は、**Supabase MCP ツール**（`mcp__plugin_supabase_supabase__*`）を使うこと。
+
 ## React Compiler
 
 React Compiler が有効化済み（`next.config.ts`）。`memo`・`useMemo`・`useCallback` による手動最適化は不要。コンパイラが自動的に行う。

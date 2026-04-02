@@ -7,8 +7,6 @@
           "Bash(cp:*)",
           "Bash(echo:*)",
           "Read",
-          "Write",
-          "Edit",
           "Glob",
           "Grep"
       ],

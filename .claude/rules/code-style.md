@@ -1,5 +1,6 @@
 ---
-paths: src/**/*.tsx
+paths: 
+  - src/**/*.tsx
 ---
 
 ## コードスタイル
