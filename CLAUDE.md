@@ -23,7 +23,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 | `pnpm format`       | oxfmt でフォーマット                 |
 | `pnpm format:check` | フォーマットチェックのみ（変更なし） |
 
-- Write\Edit フックにフォーマットを掛けています。ファイルが保存されるたびにformatが発火。手動指示不要。
+- Write\Edit フックにformatを設定している。ファイルが保存されるたびformatが自動発火。手動指示不要。
 
 ## ドキュメント
 
@@ -32,21 +32,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 | `docs/plans/design.md`         | 設計書     |
 | `docs/plans/implementation.md` | 実装プラン |
 | `docs/memo.md`                 | メモ       |
-
-## React Compiler
-
-React Compiler が有効化済み（`next.config.ts`）。`memo`・`useMemo`・`useCallback` による手動最適化は不要。コンパイラが自動的に行う。
-
-## コードスタイル
-
-- セミコロン必須、ダブルクォート、末尾カンマ（ES5互換箇所のみ）
-- インデント: 4スペース、最大行長: 100文字
-- パスエイリアス: `@/*` → `src/*`（`tsconfig.json` で設定）
-
-## Git 規約
-
-- **ブランチ命名:** `feature/xxx`, `fix/xxx`, `chore/xxx`
-- **コミットメッセージ:** Conventional Commits（`feat:`, `fix:`, `chore:`, `refactor:`, `docs:` など）
 
 ## Git Worktree
 
@@ -58,3 +43,21 @@ myapp-myprojects/ ← 整理用親ディレクトリ
 ├── myapp-main ← main メインリポジトリ
 ├── myapp-feature-auth ← feature/auth リポジトリ / worktree
 └── myapp-feature-ui ← feature/ui リポジトリ / worktree
+
+## 行動原則
+
+- 変更の意図は簡潔に伝える(冗長な説明は不要)
+- ベストプラクティスに沿った実装を提案する
+- トレードオフがある場合は選択肢を提示する
+- 動作を証明できるまでタスクを完了とマークしない
+
+## ワークスタイル
+
+- 3ステップ以上のタスクは必ずPlanモードで開始する
+- 変更は必要な箇所(Diff)のみ。影響範囲を最小化する
+- 途中でうまくいかなくなったら、無理に進めず立ち止まって再計画する
+- コードを読まずに書かない
+
+## React Compiler
+
+React Compiler が有効化済み（`next.config.ts`）。`memo`・`useMemo`・`useCallback` による手動最適化は不要。コンパイラが自動的に行う。
