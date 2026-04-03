@@ -60,13 +60,13 @@ myapp-myprojects/ ← 整理用親ディレクトリ
 
 ## Superpowers
 
-計画・実装・見直しには必ず Superpowers スキルを使うこと。
+計画・実装・見直しには必ず 以下のSuperpowersスキルを使うこと。
 
 | フェーズ | スキル                                                                              |
 | -------- | ----------------------------------------------------------------------------------- |
-| 計画     | `superpowers:writing-plans`                                                         |
-| 実装     | `superpowers:executing-plans` または `superpowers:subagent-driven-development`      |
-| 見直し   | `superpowers:requesting-code-review` / `superpowers:verification-before-completion` |
+| 計画     | `writing-plans`                                                         |
+| 実装     | `executing-plans` または `subagent-driven-development`      |
+| 見直し   | `requesting-code-review` / `verification-before-completion` |
 
 ## Supabase
 

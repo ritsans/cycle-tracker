@@ -8,7 +8,11 @@
           "Bash(echo:*)",
           "Read",
           "Glob",
-          "Grep"
+          "Grep",
+          "mcp__plugin_supabase_supabase__list_*",
+          "mcp__plugin_supabase_supabase__get_*",
+          "mcp__plugin_supabase_supabase__generate_typescript_types",
+          "mcp__plugin_supabase_supabase__confirm_cost"
       ],
       "deny": [
         "Bash(sudo:*)",
@@ -36,5 +40,14 @@
         ]
       }
     ]
+  },
+  "env":{
+    "ANTHROPIC_MODEL":"opusplan",
+    "ENABLE_TOOL_SEARCH" : true,
+    "CLAUDE_CODE_DISABLE_1M_CONTEXT": "1",
+    "CLAUDE_ENABLE_STREAM_WATCHDOG" : "1",
+    "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE" : "70",
+    "CLAUDE_CODE_NO_FLICKER": "1",
+    "MAX_THINKING_TOKENS": "0"
   }
 }
